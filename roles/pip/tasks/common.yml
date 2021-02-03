@@ -20,5 +20,4 @@
     state: present
     update_cache: yes
     disable_gpg_check: yes
-    disable_plugin: fastestmirror
     #allow_downgrade: yes
