@@ -1,0 +1,10 @@
+---
+- name: <r_yum_repos_t_update> upgrade all packages
+  yum:
+    name: "*"
+    state: latest
+    bugfix: yes
+    security: yes
+    update_cache: yes
+    disable_gpg_check: yes
+    #allow_downgrade: yes

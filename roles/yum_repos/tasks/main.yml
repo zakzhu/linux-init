@@ -1,0 +1,18 @@
+---
+# tasks file for yum_repos
+
+- import_tasks: common.yml
+  tags:
+    - r_yum_repos_t_common
+
+- import_tasks: epel_repo.yml
+  tags:
+    - r_yum_repos_t_epel_repo
+
+- import_tasks: docker_ce_repo.yml
+  tags:
+    - r_yum_repos_t_docker_ce_repo
+
+- import_tasks: update.yml
+  tags:
+    - r_yum_repos_t_update

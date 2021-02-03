@@ -1,0 +1,10 @@
+---
+- name: <r_pip_t_create_config> template a file to /etc/pip.conf
+  template:
+    src: pip.conf.j2
+    dest: /etc/pip.conf
+    owner: root
+    group: root
+    mode: "0644"
+    #validate:
+    #backup: yes
