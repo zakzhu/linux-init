@@ -21,6 +21,63 @@
         - meta: flush_handlers
 
   tasks:
+    # grub
+    - when: status == '0'
+      import_role:
+        name: grub
+      tags:
+        - r_grub
+    - meta: flush_handlers
+
+    # network/security/ssh
+    - when: status == '0'
+      block:
+        - import_role:
+            name: net_names
+          tags:
+            - r_net_names
+        - meta: flush_handlers
+
+        - import_role:
+            name: resolv
+          tags:
+            - r_resolv
+        - meta: flush_handlers
+
+        - import_role:
+            name: security
+          tags:
+            - r_security
+        - meta: flush_handlers
+
+        - import_role:
+            name: ssh_setup
+          tags:
+            - r_ssh_setup
+        - meta: flush_handlers
+
+    # preinstall
+    - when: status == '0'
+      block:
+        - import_role:
+            name: yum_repos
+          tags:
+            - r_yum_repos
+        - meta: flush_handlers
+
+        - import_role:
+            name: yum_cron
+          tags:
+            - r_yum_cron
+        - meta: flush_handlers
+
+        - import_role:
+            name: sys_preinst
+          tags:
+            - r_sys_preinst
+        - meta: flush_handlers
+
+    # common
     - when: status == '0'
       block:
         - import_role:
@@ -75,12 +132,6 @@
             name: prompt
           tags:
             - r_prompt
-        - meta: flush_handlers
-
-        - import_role:
-            name: sys_preinst
-          tags:
-            - r_sys_preinst
         - meta: flush_handlers
 
         - import_role:
