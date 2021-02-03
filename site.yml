@@ -29,7 +29,7 @@
         - r_grub
     - meta: flush_handlers
 
-    # network/security/ssh
+    # network, security, ssh
     - when: status == '0'
       block:
         - import_role:
