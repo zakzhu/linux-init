@@ -24,9 +24,75 @@
     - when: status == '0'
       block:
         - import_role:
-            name: common
+            name: alias_profile
           tags:
-            - r_common
+            - r_alias_profile
+        - meta: flush_handlers
+
+        - import_role:
+            name: ascii_banner
+          tags:
+            - r_ascii_banner
+        - meta: flush_handlers
+
+        - import_role:
+            name: base_kparams
+          tags:
+            - r_base_kparams
+        - meta: flush_handlers
+
+        - import_role:
+            name: base_kparams_cron
+          tags:
+            - r_base_kparams_cron
+        - meta: flush_handlers
+
+        - import_role:
+            name: base_rlimits
+          tags:
+            - base_rlimits
+        - meta: flush_handlers
+
+        - import_role:
+            name: chrony
+          tags:
+            - r_chrony
+        - meta: flush_handlers
+
+        - import_role:
+            name: history
+          tags:
+            - r_history
+        - meta: flush_handlers
+
+        - import_role:
+            name: pip
+          tags:
+            - r_pip
+        - meta: flush_handlers
+
+        - import_role:
+            name: prompt
+          tags:
+            - r_prompt
+        - meta: flush_handlers
+
+        - import_role:
+            name: sys_preinst
+          tags:
+            - r_sys_preinst
+        - meta: flush_handlers
+
+        - import_role:
+            name: users
+          tags:
+            - r_prompt
+        - meta: flush_handlers
+
+        - import_role:
+            name: vim
+          tags:
+            - r_vim
         - meta: flush_handlers
 
   post_tasks:
