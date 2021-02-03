@@ -1,23 +1,22 @@
 ---
-- name: <r_ascii_banner_t_common> install the figlet package
+- name: <r_sys_banner_t_common> install the figlet package
   yum:
     name: "{{ item }}"
     state: present
     update_cache: yes
     disable_gpg_check: yes
-    disable_plugin: fastestmirror
     #allow_downgrade: yes
   loop:
     - figlet
 
-- name: <r_ascii_banner_t_common> generate ascii art banner
+- name: <r_sys_banner_t_common> generate ascii art banner
   command:
   #become: yes
   #become_method: su
   #become_user:
   #become_flags: "-s /bin/sh"
   args:
-    cmd: "figlet {{ banner }}"
+    cmd: "figlet {{ sys_banner_content }}"
     #chdir:
     # A filename or (since 2.0) glob pattern.
     # If it already exists, this step *won't* be run.
@@ -28,7 +27,7 @@
     #remove:
   register: figlet_result
 
-- name: <r_ascii_banner_t_common> template a file to /etc/motd
+- name: <r_sys_banner_t_common> template a file to /etc/motd
   template:
     src: motd.j2
     dest: /etc/motd
