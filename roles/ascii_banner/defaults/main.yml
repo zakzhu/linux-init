@@ -1,8 +1,8 @@
 ---
-# defaults file for sys_banner
+# defaults file for ascii_banner
 
 # FROM TASK: <r_ascii_banner_t_common> generate ascii art banner
-sys_banner_content: YOUR COMPONEY
+ascii_banner_company: YOUR COMPONY
 
 # FROM TASK: <r_ascii_banner_t_common> template a file to /etc/motd
 #RED: "[1;31;49m"
@@ -12,5 +12,5 @@ YELLOW: "[1;33;49m"
 #MAGENTA: "[1;35;49m"
 #CYAN: "[1;36;49m"
 
-sys_banner_color: "{{ YELLOW }}"
-sys_banner_neutral: "[0m"
+ascii_banner_color: "{{ YELLOW }}"
+ascii_banner_neutral: "[0m"
