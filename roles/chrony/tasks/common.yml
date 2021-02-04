@@ -15,7 +15,7 @@
 
 - name: <r_chrony_t_common> template a file to /etc/chrony.conf
   template:
-    src: "ntp_{{ chrony_role }}.conf.j2"
+    src: "ntp_{{ chrony_node_role }}.conf.j2"
     dest: /etc/chrony.conf
     owner: root
     group: root
