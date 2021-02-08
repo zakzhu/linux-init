@@ -1,1 +1,11 @@
 ascii_banner_company:
+
+chrony_ntp_servers:
+  - ntp1.aliyun.com
+  - ntp2.aliyun.com
+  - time1.cloud.tencent.com
+  - time2.cloud.tencent.com
+
+resolv_nameservers:
+  - 223.5.5.5
+  - 223.6.6.6
