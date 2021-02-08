@@ -9,3 +9,10 @@ chrony_ntp_servers:
 resolv_nameservers:
   - 223.5.5.5
   - 223.6.6.6
+
+yum_repos_mirrors_hosts:
+  - "mirrors.aliyun.com"
+  - "mirrors.cloud.tencent.com"
+  - "mirrors.huaweicloud.com"
+  - "mirrors.tuna.tsinghua.edu.cn"
+  - "mirrors.ustc.edu.cn"
