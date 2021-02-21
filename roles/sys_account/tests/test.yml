@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - sys_acc
+    - sys_account

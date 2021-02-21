@@ -1,3 +1,46 @@
+# EXAMPLE: sys_account_primary_groups variable
+# sys_account_primary_groups:
+#   group1:
+#     name:
+#     gid:
+#   group2:
+#     name:
+#     gid:
+#   # ...
+#sys_account_primary_groups:
+
+# EXAMPLE: sys_account_secondary_group variable
+# sys_account_secondary_groups:
+#   group1:
+#     name:
+#     gid:
+#   group2:
+#     name
+#     gid:
+#   # ...
+#sys_account_secondary_groups:
+
+# EXAMPLE: sys_account_users variable
+# sys_account_users:
+#   user1:
+#     name:
+#     comment:
+#     uid:
+#     # optionally sets the user's primary group
+#     primary_group:
+#     # type: list
+#     secondary_groups:
+#     home:
+#     shell:
+#     # plain text
+#     password:
+#     # type: bool
+#     needs_generate_ssh_key:
+#   user2:
+#     # ...
+#   # ...
+#sys_account_users:
+
 ascii_banner_company:
 
 chrony_ntp_servers:
@@ -16,46 +59,3 @@ yum_repos_mirrors_hosts:
   - "mirrors.huaweicloud.com"
   - "mirrors.tuna.tsinghua.edu.cn"
   - "mirrors.ustc.edu.cn"
-#
-# EXAMPLE: primary_groups variable
-# primary_groups:
-#   group1:
-#     name:
-#     gid:
-#   group2:
-#     name:
-#     gid:
-#   # ...
-#primary_groups:
-
-# EXAMPLE: secondary_group variable
-# secondary_groups:
-#   group1:
-#     name:
-#     gid:
-#   group2:
-#     name
-#     gid:
-#   # ...
-#secondary_groups:
-
-# EXAMPLE: users variable
-# users:
-#   user1:
-#     name:
-#     comment:
-#     uid:
-#     # optionally sets the user's primary group
-#     primary_group:
-#     # type: list
-#     secondary_groups:
-#     home:
-#     shell:
-#     # plain text
-#     password:
-#     # type: bool
-#     needs_generate_ssh_key:
-#   user2:
-#     # ...
-#   # ...
-#users:
