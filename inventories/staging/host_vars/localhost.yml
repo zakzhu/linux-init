@@ -41,7 +41,7 @@
 #   # ...
 #sys_account_users:
 
-ascii_banner_company:
+ascii_banner_company: Your Company
 
 chrony_ntp_servers:
   - ntp1.aliyun.com
