@@ -1,5 +1,5 @@
 ---
-- name: <r_users_t_cr8_sgrps> create secondary groups
+- name: <r_sys_acc_t_cr8_sgrps> create secondary groups
   group:
     name: "{{ v.name }}"
     gid: "{{ v.gid }}"

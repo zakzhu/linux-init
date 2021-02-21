@@ -1,0 +1,14 @@
+---
+# tasks file for sys_acc
+
+- import_tasks: cr8_pgrps.yml
+  tags:
+    - r_sys_acc_t_cr8_pgrps
+
+- import_tasks: cr8_sgrps.yml
+  tags:
+    - r_sys_acc_t_cr8_sgrps
+
+- import_tasks: cr8_sys_acc.yml
+  tags:
+    - r_sys_acc_t_cr8_sys_acc

@@ -16,3 +16,46 @@ yum_repos_mirrors_hosts:
   - "mirrors.huaweicloud.com"
   - "mirrors.tuna.tsinghua.edu.cn"
   - "mirrors.ustc.edu.cn"
+#
+# EXAMPLE: primary_groups variable
+# primary_groups:
+#   group1:
+#     name:
+#     gid:
+#   group2:
+#     name:
+#     gid:
+#   # ...
+#primary_groups:
+
+# EXAMPLE: secondary_group variable
+# secondary_groups:
+#   group1:
+#     name:
+#     gid:
+#   group2:
+#     name
+#     gid:
+#   # ...
+#secondary_groups:
+
+# EXAMPLE: users variable
+# users:
+#   user1:
+#     name:
+#     comment:
+#     uid:
+#     # optionally sets the user's primary group
+#     primary_group:
+#     # type: list
+#     secondary_groups:
+#     home:
+#     shell:
+#     # plain text
+#     password:
+#     # type: bool
+#     needs_generate_ssh_key:
+#   user2:
+#     # ...
+#   # ...
+#users:
