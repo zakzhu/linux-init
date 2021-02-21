@@ -7,7 +7,7 @@
 [![release][shield-release]][info-release]
 [![prs welcome][shield-prs]][info-prs]
 
-> Ansible playbook for linux initlization on cloud environment.
+> Ansible playbook for linux initialization on cloud environment.
 
 [TOC]
 
