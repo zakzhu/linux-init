@@ -1,5 +1,7 @@
 # Linux-Init
 
+[![Join the chat at https://gitter.im/zakzhu/linux-init](https://badges.gitter.im/zakzhu/linux-init.svg)](https://gitter.im/zakzhu/linux-init?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 <!-- [![build status][shield-build]][info-build] -->
 
 [![gitter room][shield-gitter]][info-gitter]
