@@ -127,7 +127,7 @@ The following excellent people helped massively:
 
 ## License
 
-Linux-Init is licensed under the [BSD-3-Clause][info-license] license.
+Linux-Init is licensed under the [LGPL-2.1][info-license] license.
 Copyright &copy; 2020, Zak Zhu
 
 [info-build]: https://travis-ci.org/github/zakzhu/linux-init
