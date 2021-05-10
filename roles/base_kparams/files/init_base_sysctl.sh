@@ -18,7 +18,6 @@
 #           San Francisco, California 94105, USA
 #
 
-{{ ansible_managed | comment }}
 
 host=$(hostname)
 
@@ -48,10 +47,6 @@ else
 fi
 
 >/etc/sysctl.d/00-base-sysctl.conf cat << EOF
-
-# Disable IPv6
-net.ipv6.conf.all.disable_ipv6 = 1
-net.ipv6.conf.default.disable_ipv6 = 1
 
 # Disable syncookies (syncookies are not RFC compliant and can use too much resources)
 net.ipv4.tcp_syncookies = 0
